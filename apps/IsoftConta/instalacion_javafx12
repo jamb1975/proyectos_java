@@ -1,0 +1,8 @@
+ 
+************WINDOWS**************************************
+java --module-path %PATH_TO_FX --add-modules javafx.controls,javafx.fxml,javafx.graphics --add-exports=javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar JaviConta.jar 
+
+
+
+********************************LINUX**************************************************
+java --module-path %PATH_TO_FX --add-modules javafx.controls,javafx.fxml,javafx.graphics --add-exports=javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar JaviConta.jar 

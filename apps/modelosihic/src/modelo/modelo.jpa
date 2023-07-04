@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings status="GENERATED" jaxb-support="false" id="_14676893042501" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnCitas" visibile="true" minimized="false" id="_14676893042724">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930428412">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGN_CITAS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_14676893042785">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_14676893042826">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="noConsultorio" attribute-type="String" visibile="true" id="_14676893042827">
+                <jpa:column name="NO_CONSULTORIO" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaHora" attribute-type="java.util.Date" visibile="true" id="_14676893042828">
+                <jpa:column name="FECHA_HORA" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_14676893042839">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930428310">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="horaFin" attribute-type="java.util.Date" visibile="true" id="_146768930428311">
+                <jpa:column name="horaFin" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="horaInicio" attribute-type="java.util.Date" visibile="true" id="_146768930428613">
+                <jpa:column name="horaInicio" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaIngreso" attribute-type="java.util.Date" visibile="true" id="_146768930428818">
+                <jpa:column name="FECHA_INGRESO" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:many-to-one name="agnMedicos" target-entity="AgnMedicos" optional="true" primaryKey="false" connected-entity-id="_146768930436053" visibile="true" id="_146768930428614">
+                <jpa:join-column name="AGN_MEDICOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genPacientes" target-entity="GenPacientes" optional="true" primaryKey="false" connected-entity-id="_1467689304537166" visibile="true" id="_146768930428815">
+                <jpa:join-column name="GEN_PACIENTES_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="agnEstadosCita" target-entity="AgnEstadosCita" optional="true" primaryKey="false" connected-entity-id="_146768930434946" visibile="true" id="_146768930428816">
+                <jpa:join-column name="AGN_ESTADOS_CITA_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genHorasCita" target-entity="GenHorasCita" optional="true" primaryKey="false" connected-entity-id="_1467689304491138" visibile="true" id="_146768930428817">
+                <jpa:join-column name="GEN_HORAS_CITAS"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="servicio" target-entity="Producto" optional="true" primaryKey="false" connected-entity-id="_1467689304673311" visibile="true" id="_146768930428819">
+                <jpa:join-column name="SERVICIO_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="agnConsultoriosProcedimientos" target-entity="AgnConsultoriosProcedimientos" optional="true" primaryKey="false" connected-entity-id="_146768930432229" visibile="true" id="_146768930428820">
+                <jpa:join-column name="AGNCONSULTORIOSPROCEDIMIENTOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="AGN_CITAS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnConsultorios" visibile="true" minimized="false" id="_146768930430421">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930430422">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AgnConsultorios" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGNCONSULTORIOS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930430423">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930430424">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930430525">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930430526">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="numero" attribute-type="int" visibile="true" id="_146768930430527"/>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_146768930430528">
+                <jpa:column length="50"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="AgnConsultorios"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnConsultoriosProcedimientos" visibile="true" minimized="false" id="_146768930432229">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930432230">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AgnConsultoriosProcedimientos" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_CONSULTORIOSPROCEDIMIENTOS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930432231">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930432232">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930432233">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930432334">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:many-to-one name="agnMedicos" target-entity="AgnMedicos" optional="true" primaryKey="false" connected-entity-id="_146768930436053" visibile="true" id="_146768930432335">
+                <jpa:join-column name="AGNMEDICOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="servicios_id" target-entity="Producto" optional="true" primaryKey="false" connected-entity-id="_1467689304673311" visibile="true" id="_146768930432336">
+                <jpa:join-column name="SERVICIOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="agnConsultorios" target-entity="AgnConsultorios" optional="true" primaryKey="false" connected-entity-id="_146768930430421" visibile="true" id="_146768930432337">
+                <jpa:join-column name="AGNCONSULTORIOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="AgnConsultoriosProcedimientos"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnEspecialidades" visibile="true" minimized="false" id="_146768930433838">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930433839">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AgnEspecialidades" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGNESPECAILIDADES_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_146768930433840"/>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_146768930433841"/>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930433842">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930433843">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930433844">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930433845">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="AgnEspecialidades"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnEstadosCita" visibile="true" minimized="false" id="_146768930434946">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930434947">
+                <jpa:column name="ID_ESTADO_CITA" unique="false" nullable="false" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGN_ESTADOS_CITA"/>
+                <jpa:sequence-generator name="ID_ESTADO_CITA"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_146768930434948">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930434949">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930434950">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930434951">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930434952">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_ESTADOS_CITA" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="AGN_ESTADOS_CITA"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnMedicos" visibile="true" minimized="false" id="_146768930436053">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930436162">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AGN_MEDICOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGN_MEDICOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930436054">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930436155">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="noConsultorio" attribute-type="String" visibile="true" id="_146768930436156">
+                <jpa:column name="NO_CONSULTORIO" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="documento" attribute-type="String" visibile="true" id="_146768930436157">
+                <jpa:column name="DOCUMENTO" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930436158">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="numeroRegistro" attribute-type="String" visibile="true" id="_146768930436159">
+                <jpa:column name="NUMERO_REGISTRO" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_146768930436160">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="200" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930436161">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="AGN_MEDICOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genUnidadesOrganizacion" target-entity="GenUnidadesOrganizacion" optional="true" primaryKey="false" connected-entity-id="_1467689304617258" visibile="true" id="_146768930436163">
+                <jpa:join-column name="GEN_UNIDADES_ORGANIZACION_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genPersonas" target-entity="GenPersonas" optional="true" primaryKey="false" connected-entity-id="_1467689304549188" visibile="true" id="_146768930436164">
+                <jpa:join-column name="GEN_PERSONAS_ID"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many name="medicosEspecialidadeses" target-entity="AgnMedicosEspecialidades" mapped-by="agnMedicos" collection-type="java.util.List" connected-entity-id="_146768930437466" connected-attribute-id="_146768930437573" visibile="true" id="_146768930436265">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+        </jpa:attributes>
+        <jpa:table name="AGN_MEDICOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="AgnMedicosEspecialidades" visibile="true" minimized="false" id="_146768930437466">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930437467">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="AgnMedicosEspecialidades" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGNMEDICOSESPECIALIDADES_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930437468">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930437469">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930437470">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930437471">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:many-to-one name="agnEspecialidades" target-entity="AgnEspecialidades" optional="true" primaryKey="false" connected-entity-id="_146768930433838" visibile="true" id="_146768930437572">
+                <jpa:join-column name="AGNESPECIALIDADES_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="agnMedicos" target-entity="AgnMedicos" optional="true" primaryKey="false" connected-entity-id="_146768930436053" connected-attribute-id="_146768930436265" visibile="true" id="_146768930437573">
+                <jpa:join-column name="AGNMEDICOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="AgnMedicosEspecialidades"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenCategoriasProductos" visibile="true" minimized="false" id="_146768930438574">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930438575">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GenCategoriasProductos" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_CATEGORIASPRODUCTOS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930438576">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930438577">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930438578">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930438579">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_146768930438580">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_146768930438581">
+                <jpa:column length="100"/>
+            </jpa:basic>
+            <jpa:basic name="codigo" attribute-type="int" visibile="true" id="_146768930438582"/>
+        </jpa:attributes>
+        <jpa:table name="GenCategoriasProductos"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenCentrosPoblados" visibile="true" minimized="false" id="_146768930439683">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930439689">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_CENTROS_POBLADOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_146768930439684">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="tipo" attribute-type="String" visibile="true" id="_146768930439685">
+                <jpa:column name="TIPO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="5" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930439686">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930439687">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930439688">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_146768930439690">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="150" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930439691">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_CENTROS_POBLADOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genMunicipios" target-entity="GenMunicipios" optional="true" primaryKey="false" connected-entity-id="_1467689304502142" visibile="true" id="_146768930439692"/>
+        </jpa:attributes>
+        <jpa:table name="GEN_CENTROS_POBLADOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenConveniosEapb" visibile="true" minimized="false" id="_146768930440793">
+        <interface-list>
+            <interface>java.lang.Comparable&lt;modelo.GenConveniosEapb&gt;</interface>
+        </interface-list>
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_146768930440794">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GenConveniosEapb" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GENCONVENIOSEAPB_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_146768930440795">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_146768930440796">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_146768930440797">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_146768930440798">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="numerocontrato" attribute-type="String" visibile="true" id="_146768930440799">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="porcentajedescuento" attribute-type="float" visibile="true" id="_1467689304408100"/>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304408101">
+                <jpa:column length="1000"/>
+            </jpa:basic>
+            <jpa:basic name="fechacontrato" attribute-type="java.util.Date" visibile="true" id="_1467689304408103">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:many-to-one name="genEapb" target-entity="GenEapb" optional="true" primaryKey="false" connected-entity-id="_1467689304434112" connected-attribute-id="_1467689304435122" visibile="true" id="_1467689304408102">
+                <jpa:join-column name="GENEAPB_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="GenConveniosEapb"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenDepartamentos" visibile="true" minimized="false" id="_1467689304419104">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304420111">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_AGN_DEPARTAMENTOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304419105">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304419106">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304420107">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304420108">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304420109">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304420110">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_DEPARTAMENTOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_DEPARTAMENTOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenEapb" visibile="true" minimized="false" id="_1467689304434112">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304435118">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_EAPB" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_EAPB"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304434113">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304434114">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304434115">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nit" attribute-type="String" visibile="true" id="_1467689304434116">
+                <jpa:column name="NIT" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304435117">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304435119">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="200" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="regimen" attribute-type="String" visibile="true" id="_1467689304435120">
+                <jpa:column name="REGIMEN" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304435121">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_EAPB" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:one-to-many name="convenioseps" target-entity="GenConveniosEapb" mapped-by="genEapb" collection-type="java.util.List" connected-entity-id="_146768930440793" connected-attribute-id="_1467689304408102" visibile="true" id="_1467689304435122">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+        </jpa:attributes>
+        <jpa:table name="GEN_EAPB"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenEstadosCiviles" visibile="true" minimized="false" id="_1467689304445123">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304446128">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_ESTADOS_CIVILES"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304445124">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304446125">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304446126">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304446127">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304446129">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304446130">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ESTADOS_CIVILES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_ESTADOS_CIVILES"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenEtnias" visibile="true" minimized="false" id="_1467689304457131">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304474135">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_ETNIAS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_ETNIAS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304457132">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ETNIAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304457133">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ETNIAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304457134">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ETNIAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304474136">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ETNIAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304474137">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ETNIAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_ETNIAS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenHorasCita" visibile="true" minimized="false" id="_1467689304491138">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304491139">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_HORAS_CITAS" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_HORAS_CITAS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="hora" attribute-type="int" visibile="true" id="_1467689304491140"/>
+            <jpa:basic name="minutos" attribute-type="int" visibile="true" id="_1467689304491141"/>
+        </jpa:attributes>
+        <jpa:table name="GEN_HORAS_CITAS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenMunicipios" visibile="true" minimized="false" id="_1467689304502142">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304503150">
+                <jpa:column name="ID" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_MUNICIPIOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304502143">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304502144">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304502145">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304503146">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304503147">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304503148">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_MUNICIPIOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genDepartamentos" target-entity="GenDepartamentos" optional="true" primaryKey="false" connected-entity-id="_1467689304419104" visibile="true" id="_1467689304503149">
+                <jpa:join-column name="GEN_DEPARTAMENTOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="GEN_MUNICIPIOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenNivelesEducativos" visibile="true" minimized="false" id="_1467689304513151">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304514157">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_NIVELES_EDUCATIVOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304514152">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304514153">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304514154">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304514155">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="500" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304514156">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_NIVELES_EDUCATIVOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_NIVELES_EDUCATIVOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenNivelesUsuarios" visibile="true" minimized="false" id="_1467689304525158">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304525163">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GenNivelesUsuarios" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GENNIVELESUSUARIOS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304525159">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304525160">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304525161">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304525162">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="nivel" attribute-type="int" visibile="true" id="_1467689304525164"/>
+            <jpa:basic name="valor" attribute-type="java.math.BigDecimal" visibile="true" id="_1467689304525165"/>
+        </jpa:attributes>
+        <jpa:table name="GenNivelesUsuarios"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenPacientes" visibile="true" minimized="false" id="_1467689304537166">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304538178">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_PACIENTES" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_PACIENTES"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="estado" attribute-type="java.math.BigInteger" visibile="true" id="_1467689304537167">
+                <jpa:column name="ESTADO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304537168">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304537169">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="anexo" attribute-type="String" visibile="true" id="_1467689304537170">
+                <jpa:column name="ANEXO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaAfiliacion" attribute-type="java.util.Date" visibile="true" id="_1467689304537171">
+                <jpa:column name="FECHA_AFILIACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304537172">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="documentoAfiliadoDelGrupo" attribute-type="String" visibile="true" id="_1467689304537173">
+                <jpa:column name="DOCUMENTO_AFILIADO_DEL_GRUPO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="novedades" attribute-type="String" visibile="true" id="_1467689304538174">
+                <jpa:column name="NOVEDADES" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="grupoSanguineo" attribute-type="String" visibile="true" id="_1467689304538175">
+                <jpa:column name="GRUPO_SANGUINEO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="2" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="documentoAnterior" attribute-type="String" visibile="true" id="_1467689304538176">
+                <jpa:column name="DOCUMENTO_ANTERIOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304538177">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="comentarios" attribute-type="String" visibile="true" id="_1467689304538183">
+                <jpa:column name="COMENTARIOS" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="factorRh" attribute-type="String" visibile="true" id="_1467689304538184">
+                <jpa:column name="FACTOR_RH" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PACIENTES" length="1" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genTiposUsuarios" target-entity="GenTiposUsuarios" optional="true" primaryKey="false" connected-entity-id="_1467689304606250" visibile="true" id="_1467689304538179">
+                <jpa:join-column name="GEN_TIPOS_USUARIOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genTiposAfiliacion" target-entity="GenTiposAfiliacion" optional="true" primaryKey="false" connected-entity-id="_1467689304584232" visibile="true" id="_1467689304538180">
+                <jpa:join-column name="GEN_TIPOS_AFILIACION_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genEapb" target-entity="GenEapb" optional="true" primaryKey="false" connected-entity-id="_1467689304434112" visibile="true" id="_1467689304538181">
+                <jpa:join-column name="GEN_EAPB_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genPersonas" target-entity="GenPersonas" optional="true" primaryKey="false" connected-entity-id="_1467689304549188" visibile="true" id="_1467689304538182">
+                <jpa:join-column name="GEN_PERSONAS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genUnidadesOrganizacion" target-entity="GenUnidadesOrganizacion" optional="true" primaryKey="false" connected-entity-id="_1467689304617258" visibile="true" id="_1467689304538185">
+                <jpa:join-column name="GEN_UNIDADES_ORGANIZACION_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genNivelesUsuarios" target-entity="GenNivelesUsuarios" optional="true" primaryKey="false" connected-entity-id="_1467689304525158" visibile="true" id="_1467689304538186">
+                <jpa:join-column name="GENNIVELESUSUARIOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="GEN_PACIENTES"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenPersonas" visibile="true" minimized="false" id="_1467689304549188">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304550204">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_PERSONAS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_PERSONAS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="segundoNombre" attribute-type="String" visibile="true" id="_1467689304549189">
+                <jpa:column name="SEGUNDO_NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="barrio" attribute-type="String" visibile="true" id="_1467689304549190">
+                <jpa:column name="BARRIO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304549191">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304549192">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="primerNombre" attribute-type="String" visibile="true" id="_1467689304549193">
+                <jpa:column name="PRIMER_NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="primerApellido" attribute-type="String" visibile="true" id="_1467689304550194">
+                <jpa:column name="PRIMER_APELLIDO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaNacimiento" attribute-type="java.util.Date" visibile="true" id="_1467689304550195">
+                <jpa:column name="FECHA_NACIMIENTO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="direccion" attribute-type="String" visibile="true" id="_1467689304550196">
+                <jpa:column name="DIRECCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="segundoApellido" attribute-type="String" visibile="true" id="_1467689304550197">
+                <jpa:column name="SEGUNDO_APELLIDO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="documento" attribute-type="String" visibile="true" id="_1467689304550198">
+                <jpa:column name="DOCUMENTO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304550199">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="eMail" attribute-type="String" visibile="true" id="_1467689304550200">
+                <jpa:column name="E_MAIL" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="foto" attribute-type="String" visibile="true" id="_1467689304550201">
+                <jpa:column name="FOTO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="observaciones" attribute-type="String" visibile="true" id="_1467689304550202">
+                <jpa:column name="OBSERVACIONES" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="1000" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304550203">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="telefono" attribute-type="String" visibile="true" id="_1467689304550210">
+                <jpa:column name="TELEFONO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="eMail" attribute-type="String" visibile="true" id="_1467689304551211">
+                <jpa:column name="E_MAIL" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PERSONAS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genEstadosCiviles" target-entity="GenEstadosCiviles" optional="true" primaryKey="false" connected-entity-id="_1467689304445123" visibile="true" id="_1467689304550205">
+                <jpa:join-column name="GEN_ESTADOS_CIVILES_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genEtnias" target-entity="GenEtnias" optional="true" primaryKey="false" connected-entity-id="_1467689304457131" visibile="true" id="_1467689304550206">
+                <jpa:join-column name="GEN_ETNIAS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genMunicipios" target-entity="GenMunicipios" optional="true" primaryKey="false" connected-entity-id="_1467689304502142" visibile="true" id="_1467689304550207">
+                <jpa:join-column name="GEN_MUNICIPIOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genTiposDocumentos" target-entity="GenTiposDocumentos" optional="true" primaryKey="false" connected-entity-id="_1467689304595240" visibile="true" id="_1467689304550208">
+                <jpa:join-column name="GEN_TIPOS_DOCUMENTOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genSexo" target-entity="GenSexo" optional="true" primaryKey="false" connected-entity-id="_1467689304573224" visibile="true" id="_1467689304550209">
+                <jpa:join-column name="GEN_SEXO_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="gen_zona_residencia" target-entity="GenZonaResidencia" optional="true" primaryKey="false" connected-entity-id="_1467689304629277" visibile="true" id="_1467689304551212">
+                <jpa:join-column name="GEN_ZONA_RESIDENCIA_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="gen_profesiones" target-entity="GenProfesiones" optional="true" primaryKey="false" connected-entity-id="_1467689304562216" visibile="true" id="_1467689304551213">
+                <jpa:join-column name="GEN_PROFESIONES_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genNivelesEducativos" target-entity="GenNivelesEducativos" optional="true" primaryKey="false" connected-entity-id="_1467689304513151" visibile="true" id="_1467689304551214">
+                <jpa:join-column name="GEN_NIVELES_EDUCATIVOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:transient name="nombres" attribute-type="String" visibile="true" id="_1467689304551215"/>
+        </jpa:attributes>
+        <jpa:table name="GEN_PERSONAS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenProfesiones" visibile="true" minimized="false" id="_1467689304562216">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304562223">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_PROFESIONES" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_PROFESIONES"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304562217">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304562218">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="500" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304562219">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304562220">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304562221">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304562222">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_PROFESIONES" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_PROFESIONES"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenSexo" visibile="true" minimized="false" id="_1467689304573224">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304573230">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_SEXO" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_SEXO"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304573225">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_SEXO" length="10" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="sigla" attribute-type="String" visibile="true" id="_1467689304573226">
+                <jpa:column name="SIGLA" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_SEXO" length="1" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304573227">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_SEXO" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304573228">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_SEXO" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304573229">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_SEXO" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304573231">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_SEXO" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_SEXO"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenTiposAfiliacion" visibile="true" minimized="false" id="_1467689304584232">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304584238">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_TIPOS_AFILIACION"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304584233">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="200" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304584234">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304584235">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304584236">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304584237">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304584239">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_AFILIACION" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_TIPOS_AFILIACION"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenTiposDocumentos" visibile="true" minimized="false" id="_1467689304595240">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304595247">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_TIPOS_DOCUMENTOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304595241">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304595242">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="1" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="sigla" attribute-type="String" visibile="true" id="_1467689304595243">
+                <jpa:column name="SIGLA" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="2" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304595244">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304595245">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304595246">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304595248">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304595249">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_DOCUMENTOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_TIPOS_DOCUMENTOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenTiposUsuarios" visibile="true" minimized="false" id="_1467689304606250">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304606257">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_TIPOSUSUARIOS"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="estado" attribute-type="java.math.BigInteger" visibile="true" id="_1467689304606251">
+                <jpa:column name="ESTADO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304606252">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304606253">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304606254">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304606255">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304606256">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_TIPOS_USUARIOS" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_TIPOS_USUARIOS"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenUnidadesOrganizacion" visibile="true" minimized="false" id="_1467689304617258">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304618271">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_UNIDADES_ORG"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="nivelAtencion" attribute-type="String" visibile="true" id="_1467689304618259">
+                <jpa:column name="NIVEL_ATENCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="200" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="estado" attribute-type="Short" visibile="true" id="_1467689304618260">
+                <jpa:column name="ESTADO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="tipo" attribute-type="Short" visibile="true" id="_1467689304618261">
+                <jpa:column name="TIPO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304618262">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="sigla" attribute-type="String" visibile="true" id="_1467689304618263">
+                <jpa:column name="SIGLA" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304618264">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304618265">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="direccion" attribute-type="String" visibile="true" id="_1467689304618266">
+                <jpa:column name="DIRECCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="200" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304618267">
+                <jpa:column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="500" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304618268">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="aprobadorOrdenes" attribute-type="java.math.BigInteger" visibile="true" id="_1467689304618269">
+                <jpa:column name="APROBADOR_ORDENES" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304618270">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="telefono" attribute-type="String" visibile="true" id="_1467689304618272">
+                <jpa:column name="TELEFONO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="100" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="nivel" attribute-type="Short" visibile="true" id="_1467689304618273">
+                <jpa:column name="NIVEL" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_UNIDADES_ORGANIZACION" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="nit" attribute-type="String" visibile="true" id="_1467689304618276">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:many-to-one name="genMunicipios" target-entity="GenMunicipios" optional="true" primaryKey="false" connected-entity-id="_1467689304502142" visibile="true" id="_1467689304618274">
+                <jpa:join-column name="GEN_MUNICIPIOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genCentrosPoblados" target-entity="GenCentrosPoblados" optional="true" primaryKey="false" connected-entity-id="_146768930439683" visibile="true" id="_1467689304618275">
+                <jpa:join-column name="GEN_CENTROS_POBLADOS_ID"/>
+            </jpa:many-to-one>
+        </jpa:attributes>
+        <jpa:table name="GEN_UNIDADES_ORGANIZACION"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="GenZonaResidencia" visibile="true" minimized="false" id="_1467689304629277">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304629283">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_GEN_ZONA_RESIDENCIA"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304629278">
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="20" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304629279">
+                <jpa:column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="5" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304629280">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304629281">
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304629282">
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="255" precision="0" scale="0"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304630284">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" table="GEN_ZONA_RESIDENCIA" length="50" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="GEN_ZONA_RESIDENCIA"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="HclCups" visibile="true" minimized="false" id="_1467689304640285">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304640286">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="HclCups" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_HCLCUPS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304640287"/>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304640288"/>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304640289">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304640290">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304640291">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304640292">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="recomendaciones_especificas" attribute-type="String" visibile="true" id="_1467689304640293"/>
+            <jpa:basic name="gen_recomendacion_especiali_id" attribute-type="Long" visibile="true" id="_1467689304640294"/>
+            <jpa:basic name="gen_procedimientos_apoyo_id" attribute-type="Long" visibile="true" id="_1467689304640295"/>
+            <jpa:basic name="atencion" attribute-type="Long" visibile="true" id="_1467689304640296"/>
+        </jpa:attributes>
+        <jpa:table name="HclCups"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="MedPresentacionMedicamentos" visibile="true" minimized="false" id="_1467689304651297">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304651298">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="MedPresentacionMedicamentos" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_MEDPRESENTACIONMEDICAMENTOS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304651299">
+                <jpa:column length="100"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304651300">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304651301">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304651302">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304651303">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="MedPresentacionMedicamentos"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="MedUnidadDosis" visibile="true" minimized="false" id="_1467689304661304">
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304661305">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="MedUnidadDosis" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_MEDUNIDADDOSIS_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="descripcion" attribute-type="String" visibile="true" id="_1467689304662306">
+                <jpa:column length="100"/>
+            </jpa:basic>
+            <jpa:basic name="usuarioModificador" attribute-type="String" visibile="true" id="_1467689304662307">
+                <jpa:column name="USUARIO_MODIFICADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304662308">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304662309">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304662310">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:table name="MedUnidadDosis"/>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" compositePrimaryKeyType="NONE" static-metamodel="false" abstract="false" class="Producto" visibile="true" minimized="false" id="_1467689304673311">
+        <annotation>@javax.xml.bind.annotation.XmlRootElement</annotation>
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_1467689304673315">
+                <jpa:column name="ID" unique="false" nullable="false" insertable="true" updatable="true" table="PRODUCTO" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_PRODUCTO_ID"/>
+                <jpa:sequence-generator name="ID"/>
+            </jpa:id>
+            <jpa:basic name="codigo" attribute-type="String" visibile="true" id="_1467689304673312">
+                <jpa:column unique="true"/>
+            </jpa:basic>
+            <jpa:basic name="costo" attribute-type="java.math.BigDecimal" visibile="true" id="_1467689304673313">
+                <jpa:column precision="12" scale="2"/>
+            </jpa:basic>
+            <jpa:basic name="descrip" attribute-type="String" visibile="true" id="_1467689304673314"/>
+            <jpa:basic name="nombre" attribute-type="String" visibile="true" id="_1467689304673316"/>
+            <jpa:basic name="precio" attribute-type="java.math.BigDecimal" visibile="true" id="_1467689304673317">
+                <jpa:column precision="12" scale="2"/>
+            </jpa:basic>
+            <jpa:basic name="tipo" attribute-type="String" visibile="true" id="_1467689304673318"/>
+            <jpa:basic name="estado" attribute-type="String" visibile="true" id="_1467689304673319"/>
+            <jpa:basic name="codigo2" attribute-type="int" visibile="true" id="_1467689304673320"/>
+            <jpa:basic name="img" attribute-type="byte[]" visibile="true" id="_1467689304673322">
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic name="iva" attribute-type="int" visibile="true" id="_1467689304673323"/>
+            <jpa:basic name="codigosrelacionados" attribute-type="String" visibile="true" id="_1467689304673324"/>
+            <jpa:basic name="ude" attribute-type="int" visibile="true" id="_1467689304673325"/>
+            <jpa:basic name="fechaModificacion" attribute-type="java.util.Date" visibile="true" id="_1467689304673326">
+                <jpa:column name="FECHA_MODIFICACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="fechaCreacion" attribute-type="java.util.Date" visibile="true" id="_1467689304674327">
+                <jpa:column name="FECHA_CREACION"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="usuarioCreador" attribute-type="String" visibile="true" id="_1467689304674328">
+                <jpa:column name="USUARIO_CREADOR" length="50"/>
+            </jpa:basic>
+            <jpa:basic name="presentacioncomercial" attribute-type="String" visibile="true" id="_1467689304674333">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="principioactivo" attribute-type="String" visibile="true" id="_1467689304674334">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="medida" attribute-type="int" visibile="true" id="_1467689304674335"/>
+            <jpa:basic name="concentracion" attribute-type="int" visibile="true" id="_1467689304674336"/>
+            <jpa:basic name="laboratorio" attribute-type="String" visibile="true" id="_1467689304674337">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="reginvima" attribute-type="String" visibile="true" id="_1467689304674338">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:basic name="marca" attribute-type="String" visibile="true" id="_1467689304674339">
+                <jpa:column length="50"/>
+            </jpa:basic>
+            <jpa:many-to-one name="hclCups" target-entity="HclCups" optional="true" primaryKey="false" connected-entity-id="_1467689304640285" visibile="true" id="_1467689304674329">
+                <jpa:join-column name="HCLCUPS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="genCategoriasProductos" target-entity="GenCategoriasProductos" optional="true" primaryKey="false" connected-entity-id="_146768930438574" visibile="true" id="_1467689304674330">
+                <jpa:join-column name="GENCATEGORIASPRODUCTOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="medFormasFarmaceuticas" target-entity="MedPresentacionMedicamentos" optional="true" primaryKey="false" connected-entity-id="_1467689304651297" visibile="true" id="_1467689304674331">
+                <jpa:join-column name="MEDPRESENTACIONMEDICAMENTOS_ID"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one name="unidadmedida" target-entity="MedUnidadDosis" optional="true" primaryKey="false" connected-entity-id="_1467689304661304" visibile="true" id="_1467689304674332">
+                <jpa:join-column name="MEDUNIDADDOSIS_ID"/>
+            </jpa:many-to-one>
+            <jpa:transient name="m_iCantidad" attribute-type="int" visibile="true" id="_1467689304673321"/>
+        </jpa:attributes>
+        <jpa:table name="PRODUCTO"/>
+    </jpa:entity>
+    <jpa:diagram id="_14676893042512">
+        <plane elementRef="_14676893042501" id="_14676893042523_p"/>
+    </jpa:diagram>
+</jpa:entity-mappings>

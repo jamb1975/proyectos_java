@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    width="210mm"
+    height="297mm"
+    viewBox="0 0 744.09448819 1052.3622047"
+    id="svg2"
+    version="1.1"
+    inkscape:version="0.91 r13725"
+    sodipodi:docname="citas.svg"
+    inkscape:export-filename="/home/adminlinux/apps/Sihic/src/sihic/images/use58582.png"
+    inkscape:export-xdpi="90"
+    inkscape:export-ydpi="90">
+    <defs
+        id="defs4">
+        <symbol
+            id="TicketPurchase">
+            <title
+                id="title4370">Ticket Purchase</title>
+            <g
+                style="stroke:none"
+                id="g4372">
+                <!-- Seller -->
+                <circle
+                    cx="21"
+                    cy="15"
+                    r="4.75"
+                    id="circle4374" />
+                <path
+                    d="m 12.75,36 2.5,-9 1,0 -2.5,9 14.5,0 -2.5,-9 1,0 1.5,4.5 c 0.7,2 2.25,2 3.5,0.5 l 5,-6 A 1.863,1.863 0 0 0 33.9,23.6 l -3,3.65 L 30.25,25 C 29.5,22.5 27,20.5 24,20.5 l -6,0 c -3,0 -5.5,2 -6.25,4.5 l -3,11 z"
+                    id="path4376" />
+                <!-- Buyer -->
+                <circle
+                    cx="54"
+                    cy="15"
+                    r="4.75"
+                    id="circle4378" />
+                <path
+                    d="m 60,37 3,0 0,-13 a 3.5,3.5 0 0 0 -3.5,-3.5 l -11,0 A 4.5,4.5 0 0 0 45,22 l -9,11 a 2.15,2.15 0 0 0 3.25,2.75 L 48,25.5 l 0,38 a 2.75,2.75 0 0 0 5.5,0 l 0,-21.5 1,0 0,21.5 a 2.75,2.75 0 0 0 5.5,0 z"
+                    id="path4380" />
+                <!-- Ticket -->
+                <rect
+                    x="35"
+                    y="14.5"
+                    width="4"
+                    height="9.5"
+                    id="rect4382" />
+                <!-- Counter -->
+                <rect
+                    x="6"
+                    y="37"
+                    width="60"
+                    height="6"
+                    id="rect4384" />
+            </g>
+        </symbol>
+        <symbol
+            id="TicketPurchase_Inv">
+            <title
+                id="title4387">Ticket Purchase</title>
+            <rect
+                x="0.5"
+                y="0.5"
+                width="71"
+                height="71"
+                ry="6"
+                style="stroke:white"
+                id="rect4389" />
+            <g
+                style="fill:white;stroke:none"
+                id="g4391">
+                <!-- Seller -->
+                <circle
+                    cx="21"
+                    cy="15"
+                    r="4.75"
+                    id="circle4393" />
+                <path
+                    d="m 12.75,36 2.5,-9 1,0 -2.5,9 14.5,0 -2.5,-9 1,0 1.5,4.5 c 0.7,2 2.25,2 3.5,0.5 l 5,-6 A 1.863,1.863 0 0 0 33.9,23.6 l -3,3.65 L 30.25,25 C 29.5,22.5 27,20.5 24,20.5 l -6,0 c -3,0 -5.5,2 -6.25,4.5 l -3,11 z"
+                    id="path4395" />
+                <!-- Buyer -->
+                <circle
+                    cx="54"
+                    cy="15"
+                    r="4.75"
+                    id="circle4397" />
+                <path
+                    d="m 60,37 3,0 0,-13 a 3.5,3.5 0 0 0 -3.5,-3.5 l -11,0 A 4.5,4.5 0 0 0 45,22 l -9,11 a 2.15,2.15 0 0 0 3.25,2.75 L 48,25.5 l 0,38 a 2.75,2.75 0 0 0 5.5,0 l 0,-21.5 1,0 0,21.5 a 2.75,2.75 0 0 0 5.5,0 z"
+                    id="path4399" />
+                <!-- Ticket -->
+                <rect
+                    x="35"
+                    y="14.5"
+                    width="4"
+                    height="9.5"
+                    id="rect4401" />
+                <!-- Counter -->
+                <rect
+                    x="6"
+                    y="37"
+                    width="60"
+                    height="6"
+                    id="rect4403" />
+            </g>
+        </symbol>
+        <symbol
+            id="WaitingRoom_Inv">
+            <title
+                id="title4863">Waiting Room</title>
+            <rect
+                x="0.5"
+                y="0.5"
+                width="71"
+                height="71"
+                ry="6"
+                style="stroke:white"
+                id="rect4865" />
+            <!-- Clock -->
+            <circle
+                cx="49.5"
+                cy="17"
+                r="8"
+                style="stroke:white;stroke-width:1.75"
+                id="circle4867" />
+            <path
+                d="m 49.5,12 0,5 4.5,-2"
+                style="fill:none;stroke:white;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round"
+                id="path4869" />
+            <!-- Person -->
+            <circle
+                cx="25"
+                cy="14"
+                r="6"
+                style="fill:white;stroke:none"
+                id="circle4871" />
+            <path
+                d="m 42,63 a 3,3 0 0 0 6,0 L 48,43.5 A 4.5,4.5 0 0 0 43.5,39 L 33.875,39 31,25 a 5.5,5.5 0 0 0 -10.75,2.25 l 3.375,16.5 A 5.5,5.5 0 0 0 29,48 l 13,0 z"
+                style="fill:white;stroke:none"
+                id="path4873" />
+            <!-- Bench -->
+            <path
+                d="m 17.25,30.5 3,14.5 c 1,3.5 4,6.5 7.5,6.5 l 9.5,0"
+                style="fill:none;stroke:white;stroke-width:5;stroke-linecap:round"
+                id="path4875" />
+        </symbol>
+    </defs>
+    <sodipodi:namedview
+        id="base"
+        pagecolor="#ffffff"
+        bordercolor="#666666"
+        borderopacity="1.0"
+        inkscape:pageopacity="0.0"
+        inkscape:pageshadow="2"
+        inkscape:zoom="0.5"
+        inkscape:cx="39.047244"
+        inkscape:cy="360"
+        inkscape:document-units="px"
+        inkscape:current-layer="layer1"
+        showgrid="false"
+        inkscape:window-width="1365"
+        inkscape:window-height="666"
+        inkscape:window-x="1"
+        inkscape:window-y="31"
+        inkscape:window-maximized="1" />
+    <metadata
+        id="metadata7">
+        <rdf:RDF>
+            <cc:Work
+                rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                    rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g
+        inkscape:label="Capa 1"
+        inkscape:groupmode="layer"
+        id="layer1">
+        <use
+            id="use9052"
+            style="fill:#d43100;fill-opacity:1;stroke:#000000"
+            xlink:href="#WaitingRoom_Inv"
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            transform="matrix(3.0006111,0,0,2.2606751,-1.0422539e-6,889.5936)" />
+    </g>
+</svg>

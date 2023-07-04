@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ControladorJaviContaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.ActividadesEconomicas</class>
+    <class>modelo.AsientosModelosTiposDocumentosContables</class>
+    <class>modelo.CargosEntidad</class>
+    <class>modelo.ConsecutivosContabilidad</class>
+    <class>modelo.Consignaciones</class>
+    <class>modelo.DocumentoSoporte</class>
+    <class>modelo.Empleados</class>
+    <class>modelo.FactorHorasExtras</class>
+    <class>modelo.GenDepartamentos</class>
+    <class>modelo.GenEapb</class>
+    <class>modelo.GenMunicipios</class>
+    <class>modelo.InformacionTributaria</class>
+    <class>modelo.LibroAuxiliar</class>
+    <class>modelo.LibroMayorBalances</class>
+    <class>modelo.ModeloTiposDocumentosContables</class>
+    <class>modelo.Nomina</class>
+    <class>modelo.NominaEmpleados</class>
+    <class>modelo.Novedades</class>
+    <class>modelo.ParametrosNomina</class>
+    <class>modelo.Producto</class>
+    <class>modelo.Puc</class>
+    <class>modelo.RetencionFuente</class>
+    <class>modelo.Servicios</class>
+    <class>modelo.Terceros</class>
+    <class>modelo.TiposDocumentosContables</class>
+    <class>modelo.UsuarioServicios</class>
+    <class>modelo.Usuarios</class>
+    <class>modelo.DatosPyme</class>
+    <class>modelo.ParametrosContabilidad</class>
+    <class>modelo.Factura</class>
+    <class>modelo.FacturaItem</class>
+    <class>modelo.FacturaItemProveedores</class>
+    <class>modelo.FacturaProveedores</class>
+    <class>modelo.LastNumberNoFactura</class>
+    <class>model.ConsecutivoFactura</class>
+    <class>modelo.Bodega</class>
+    <class>modelo.Kardex</class>
+    <class>modelo.Proveedores</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:7777/isoftconta"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>

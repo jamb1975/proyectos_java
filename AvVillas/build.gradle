@@ -1,0 +1,47 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'com.microsoft.azure.azurewebapp'  version '1.2.0'
+}
+
+group = 'com.avvillas'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+azurewebapp {
+    subscription = '690b4b2a-6219-4e90-acf5-f9c2dd040f8c'
+    resourceGroup = 'first-azure-application'
+    appName = 'first-azure-app-avvillas'
+    pricingTier = 'B1' 
+    region = 'westeurope' 
+    runtime {
+        os = 'Linux' 
+        webContainer = 'Java SE'
+        javaVersion = 'Java 11'
+    }
+}

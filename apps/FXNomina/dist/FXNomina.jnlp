@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FXNomina.jnlp">
+  <information>
+    <title>FXNomina</title>
+    <vendor>adminlinux</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FXNomina.jar" size="3575519" download="eager" />
+    <jar href="lib/ControladorNomina.jar" size="51490" download="eager" />
+    <jar href="lib/ModeloNomina.jar" size="109094" download="eager" />
+    <jar href="lib/commons-net-2.2-ftp.jar" size="114560" download="eager" />
+    <jar href="lib/dpfpenrollment.jar" size="334429" download="eager" />
+    <jar href="lib/dpfpverification.jar" size="36919" download="eager" />
+    <jar href="lib/dpotapi.jar" size="67487" download="eager" />
+    <jar href="lib/dpotjni.jar" size="14173" download="eager" />
+    <jar href="lib/eclipselink.jar" size="8478776" download="eager" />
+    <jar href="lib/itext-pdfa-5.5.6.jar" size="62448" download="eager" />
+    <jar href="lib/itext-xtra-5.5.6.jar" size="116193" download="eager" />
+    <jar href="lib/itextpdf-5.5.6.jar" size="2265668" download="eager" />
+    <jar href="lib/javax.persistence_2.1.0.v201304241213.jar" size="164637" download="eager" />
+    <jar href="lib/jmetro-5.5.jar" size="67933" download="eager" />
+    <jar href="lib/lucene-core-4.10.3.jar" size="2562626" download="eager" />
+    <jar href="lib/lucene-grouping-4.10.3.jar" size="107782" download="eager" />
+    <jar href="lib/lucene-queryparser-4.10.3.jar" size="391514" download="eager" />
+    <jar href="lib/opencv-310.jar" size="331744" download="eager" />
+    <jar href="lib/org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" size="1366247" download="eager" />
+    <jar href="lib/postgresql-9.4-1201.jdbc4.jar" size="642809" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FXNomina" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fxnomina.FXNomina"  name="FXNomina" />
+  <update check="always"/>
+</jnlp>

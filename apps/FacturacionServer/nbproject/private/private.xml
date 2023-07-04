@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/service/ProductoMateriaPrimaFacadeREST.java</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/service/TempMesasFacturaFacadeREST.java</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/web/WEB-INF/web.xml</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/service/Ventas_Totales_Mes_ViewFacadeREST.java</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/conf/persistence.xml</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/service/TercerosFacadeREST.java</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/setup/glassfish-resources.xml</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/rest/config/ApplicationConfig.java</file>
+            <file>file:/C:/proyectos_java/apps/FacturacionServer/src/org/controller/Reportes.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,6 @@
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/parametrizacion/FormTerceros
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/parametrizacion/FormDatosEmpresa
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/parametrizacion/FormCategoria
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/parametrizacion/FormProductos
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/facturas/FormFacturarMesas
+file:/C:/workspace/2.2.45/label/windows-i586-14/apps/modulos/reportes/VentasPorProducto

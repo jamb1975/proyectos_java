@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ControladorAbacoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Abono</class>
+    <class>model.AbonoProveedores</class>
+    <class>model.Categoria</class>
+    <class>model.DatosEmpresa</class>
+    <class>model.Factura</class>
+    <class>model.FacturaItem</class>
+    <class>model.FacturaItemProveedores</class>
+    <class>model.FacturaProveedores</class>
+    <class>model.Kardex</class>
+    <class>model.LastNumberNoFactura</class>
+    <class>model.Producto</class>
+    <class>model.ProductoMateriaPrima</class>
+    <class>model.Proveedores</class>
+    <class>model.Terceros</class>
+    <class>model.UnidadesMedida</class>
+    <class>model.Solucion</class>
+    <class>model.UsuarioSoluciones</class>
+    <class>model.Usuarios</class>
+    <class>model.Bodega</class>
+    <class>model.BodegaProducto</class>
+    <class>model.GenCentrosPoblados</class>
+    <class>model.GenDepartamentos</class>
+    <class>model.GenMunicipios</class>
+    <class>model.Organizacion</class>
+    <class>model.Personas</class>
+    <class>model.ActividadesEconomicas</class>
+    <class>model.CentroCostos</class>
+    <class>model.ConComprobanteContabilidad</class>
+    <class>model.ConComprobanteEgreso</class>
+    <class>model.ConComprobanteGastos</class>
+    <class>model.ConComprobanteIngreso</class>
+    <class>model.ConDetallesComprobanteContabilidad</class>
+    <class>model.ConLibroAuxiliar</class>
+    <class>model.ConLibroDiario</class>
+    <class>model.ConPuc</class>
+    <class>model.ConsecutivoComprobanteContabilidad</class>
+    <class>model.ConsecutivoComprobanteEgreso</class>
+    <class>model.ConsecutivoComprobanteGastos</class>
+    <class>model.ConsecutivoComprobanteIngreso</class>
+    <class>model.temppuc</class>
+    <class>model.Configuraciones</class>
+    <class>model.Arqueo</class>
+    <class>model.ConsecutivoFactura</class>
+    <class>model.DetallesPedido</class>
+    <class>model.Pedidos</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:7777/abaco"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+    
+  </persistence-unit>
+</persistence>

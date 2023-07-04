@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 140 17"
+   id="svg8"
+   sodipodi:docname="oracle_logo.svg"
+   width="140"
+   height="17"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="3.8055"
+     inkscape:cx="50"
+     inkscape:cy="62.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 31.96164,-0.1956274 c -1.438267,3.5816191 -5.271825,6.8989182 -5.318528,10.2753304 -0.03771,2.726462 2.452518,5.099297 5.477802,5.099297 0.05336,0 0.106734,-4.22e-4 0.159275,-0.0017 0.05253,-0.0013 0.103303,-0.0052 0.155024,-0.0082 3.206526,-0.173488 4.828056,-2.982494 4.862937,-5.158258 0.04737,-2.9542809 -4.163739,-6.5462629 -5.33651,-10.2064694 z m -4.232384,9.0968941 c 1.255821,4.4609693 5.696269,5.2008533 5.696269,5.2008533 0,0 -6.492249,1.177179 -5.696269,-5.2008533 z m -0.0762,5.0922873 c -3.762926,0.393517 -6.390275,1.285269 -6.390275,2.322734 0,1.401666 4.794133,2.538133 10.707691,2.538133 5.913571,0 10.707367,-1.136467 10.707367,-2.538133 0,-1.034208 -2.610197,-1.923807 -6.353971,-2.319229 -0.10839,0.13718 -0.223954,0.270092 -0.346349,0.397765 2.575638,0.335605 4.321343,0.984697 4.321343,1.730621 0,1.090177 -3.728946,1.973984 -8.32839,1.973984 -4.599433,0 -8.32773,-0.883807 -8.32773,-1.973984 0,-0.752495 1.776574,-1.40696 4.389693,-1.739955 -0.133164,-0.125026 -0.259767,-0.255881 -0.379379,-0.391936 z m 0.857206,0.794386 c -1.506409,0.255672 -2.488543,0.67363 -2.488543,1.146338 0,0.778708 2.663447,1.410465 5.948753,1.410465 3.28532,0 5.948431,-0.631757 5.948431,-1.410465 0,-0.461564 -0.9364,-0.870893 -2.382905,-1.127954 -0.198609,0.16484 -0.411865,0.31646 -0.639387,0.452649 0.405254,0.137121 0.64331,0.304 0.64331,0.484156 0,0.467222 -1.598255,0.846033 -3.569449,0.846033 -1.971184,0 -3.569121,-0.378811 -3.569121,-0.846033 0,-0.197834 0.286571,-0.379839 0.766611,-0.523857 -0.230019,-0.129941 -0.449706,-0.274282 -0.6577,-0.431332 z"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.22442186;enable-background:accumulate"
+     marker="none"
+     visibility="visible"
+     display="inline"
+     overflow="visible"
+     id="path2"
+     inkscape:connector-curvature="0" />
+  <text
+     x="57.971706"
+     y="12.519673"
+     font-size="5px"
+     font-weight="bold"
+     id="text4"
+     style="font-weight:bold;font-size:14.64333534px;font-family:'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif;fill:#6c5d53;stroke-width:2.92866755"
+     transform="scale(0.84243346,1.1870374)">DROP WATER</text>
+</svg>

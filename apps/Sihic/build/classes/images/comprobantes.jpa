@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="modelo" v="4.4" rws="_1503488391663978" cws="_1503488391663978" persistenceUnitName="DEFAULT_PU" pp="E" sm="false" xs="true" id="_1503488390945862" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:schema>sihic</jpa:schema>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteIngresoPK" abs="false" class="ConComprobanteIngreso" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488390965863">
+        <jpa:annotation e="true" n="@javax.xml.bind.annotation.XmlRootElement"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488390966867">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488390966868">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488390966869">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488390966870">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488390966871">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="banco" ft="false" id="_1503488390966872"/>
+            <jpa:basic attribute-type="String" v="true" name="nocheque" ft="false" id="_1503488390966873"/>
+            <jpa:basic attribute-type="String" v="true" name="notargeta" ft="false" id="_1503488390966874"/>
+            <jpa:basic attribute-type="int" v="true" name="tipotargeta" ft="false" id="_1503488390966875"/>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="valor" ft="false" id="_1503488390966877"/>
+            <jpa:basic attribute-type="String" v="true" name="concepto" ft="false" id="_1503488390966878"/>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391181959" connected-attribute-id="_1503488391185974" v="true" name="detallesComprobanteContabilidads" ft="false" id="_1503488390967880">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:transient attribute-type="String" v="true" name="nocomprobantecerosizquierda" ft="false" id="_1503488390967879"/>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488390965864">
+                <jpa:column name="ID" unique="true" nullable="false" insertable="true" updatable="true" table="ConComprobanteIngreso" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_COMPROBANTEINGRESO_ID"/>
+                <jpa:sequence-generator name="SEQ_COMPROBANTEINGRESO_ID" sequence-name="SEQ_COMPROBANTEINGRESO_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="ConComprobanteIngreso"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteGastosPK" abs="false" class="ConComprobanteGastos" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488390995881">
+        <jpa:annotation e="true" n="@javax.xml.bind.annotation.XmlRootElement"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488390996883">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488390996884">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488390996885">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488390996886">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488390996887">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="valor" ft="false" id="_1503488390996888"/>
+            <jpa:basic attribute-type="String" v="true" name="concepto" ft="false" id="_1503488390996889"/>
+            <jpa:basic attribute-type="String" v="true" name="nofactura" ft="false" id="_1503488390996893"/>
+            <jpa:basic attribute-type="String" v="true" name="tipogasto" ft="false" id="_1503488390996894">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="1"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391181959" connected-attribute-id="_1503488391186977" v="true" name="detallesComprobanteContabilidad" ft="false" id="_1503488390996895">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391089922" connected-attribute-id="_1503488391114939" v="true" name="detallesComprobanteEgresos" ft="false" id="_1503488391001897">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:transient attribute-type="String" v="true" name="nocomprobantecerosizquierda" ft="false" id="_1503488390996890"/>
+            <jpa:transient attribute-type="java.math.BigDecimal" v="true" name="totalsaldo" ft="false" id="_1503488391001898"/>
+            <jpa:transient attribute-type="java.math.BigDecimal" v="true" name="totalegresos" ft="false" id="_1503488391001899"/>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488390995882">
+                <jpa:column name="ID" unique="true" nullable="false" insertable="true" updatable="true" table="ConComprobanteGastos" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_COMPROBANTEGASTOS_ID"/>
+                <jpa:sequence-generator name="SEQ_COMPROBANTEGASTOS_ID" sequence-name="SEQ_COMPROBANTEGASTOS_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="ConComprobanteGastos"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteVentaPK" abs="false" class="ConComprobanteVenta" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488391019900">
+        <jpa:annotation e="true" n="@javax.xml.bind.annotation.XmlRootElement"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488391020902">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488391020903">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488391020904">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488391020905">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488391020906">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="valor" ft="false" id="_1503488391020907"/>
+            <jpa:basic attribute-type="String" v="true" name="concepto" ft="false" id="_1503488391020908"/>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391181959" connected-attribute-id="_1503488391185976" v="true" name="detallesComprobanteContabilidads" ft="false" id="_1503488391020910">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:transient attribute-type="String" v="true" name="nocomprobantecerosizquierda" ft="false" id="_1503488391020909"/>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488391020901">
+                <jpa:column name="ID" unique="true" nullable="false" insertable="true" updatable="true" table="ConComprobanteVenta" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_COMPROBANTEVENTA_ID"/>
+                <jpa:sequence-generator name="SEQ_COMPROBANTEVENTA_ID" sequence-name="SEQ_COMPROBANTEVENTA_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="ConComprobanteVenta"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteProcedimientoPK" abs="false" class="ConComprobanteProcedimiento" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488391058913">
+        <jpa:annotation e="true" n="@javax.xml.bind.annotation.XmlRootElement"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488391059915">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488391059916">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488391059917">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488391059918">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488391059919">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488391059914">
+                <jpa:column name="ID" unique="true" nullable="false" insertable="true" updatable="true" table="ConComprobanteProcedimiento" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_COMPROBANTEPROCEDIMIENTO_ID"/>
+                <jpa:sequence-generator name="SEQ_COMPROBANTEPROCEDIMIENTO_ID" sequence-name="SEQ_COMPROBANTEPROCEDIMIENTO_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="ConComprobanteProcedimiento"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteEgresoPK" abs="false" class="ConComprobanteEgreso" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488391089922">
+        <jpa:annotation e="true" n="@javax.xml.bind.annotation.XmlRootElement"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488391100924">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488391100925">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488391100926">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488391100927">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488391100928">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="banco" ft="false" id="_1503488391108929"/>
+            <jpa:basic attribute-type="String" v="true" name="nocheque" ft="false" id="_1503488391110930"/>
+            <jpa:basic attribute-type="String" v="true" name="notargeta" ft="false" id="_1503488391110931"/>
+            <jpa:basic attribute-type="int" v="true" name="tipotargeta" ft="false" id="_1503488391110932"/>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="valor" ft="false" id="_1503488391110933"/>
+            <jpa:basic attribute-type="String" v="true" name="concepto" ft="false" id="_1503488391110934"/>
+            <jpa:basic attribute-type="String" v="true" name="afavorde" ft="false" id="_1503488391110937"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488390995881" connected-attribute-id="_1503488391001897" v="true" name="conComprobanteGastos" ft="false" id="_1503488391114939">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+                <jpa:join-column name="CONCOMPROBANTEGASTOS_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391181959" connected-attribute-id="_1503488391185975" v="true" name="detallesComprobanteContabilidads" ft="false" id="_1503488391110938">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:transient attribute-type="String" v="true" name="nocomprobantecerosizquierda" ft="false" id="_1503488391110935"/>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488391099923">
+                <jpa:column name="ID" unique="true" nullable="false" insertable="true" updatable="true" table="ConComprobanteEgreso" length="255" precision="22" scale="0"/>
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_COMPROBANTEEGRESO_ID"/>
+                <jpa:sequence-generator name="SEQ_COMPROBANTEEGRESO_ID" sequence-name="SEQ_COMPROBANTEEGRESO_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="ConComprobanteEgreso"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConComprobanteContabilidadPK" abs="false" class="ConComprobanteContabilidad" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488391135940">
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="int" v="true" xvt="" name="tipo" ft="false" id="_1503488391135944">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488391135945">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488391135946">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488391135947">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488391136948">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488391138949">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="banco" ft="false" id="_1503488391145953"/>
+            <jpa:basic attribute-type="String" v="true" name="nocheque" ft="false" id="_1503488391145954"/>
+            <jpa:basic attribute-type="String" v="true" name="notargeta" ft="false" id="_1503488391145955"/>
+            <jpa:basic attribute-type="int" v="true" name="tipotargeta" ft="false" id="_1503488391146956"/>
+            <jpa:basic attribute-type="int" v="true" xvt="" name="tipocomprobante" ft="false" id="_1503488391146958">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_1503488391181959" connected-attribute-id="_1503488391185962" v="true" name="detallesComprobanteContabilidads" ft="false" id="_1503488391138950">
+                <jpa:cascade>
+                    <jpa:cascade-all/>
+                </jpa:cascade>
+            </jpa:one-to-many>
+            <jpa:transient attribute-type="java.math.BigDecimal" v="true" name="totaldebe" ft="false" id="_1503488391145951"/>
+            <jpa:transient attribute-type="java.math.BigDecimal" v="true" name="totalhaber" ft="false" id="_1503488391145952"/>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488391135941">
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_CONCOMPROBANTECONTABILIDAD_ID"/>
+                <jpa:sequence-generator name="SEQ_CONCOMPROBANTECONTABILIDAD_ID" sequence-name="SEQ_CONCOMPROBANTECONTABILIDAD_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ConDetallesComprobanteContabilidadPK" abs="false" class="ConDetallesComprobanteContabilidad" v="true" xre="false" m="false" rootElement="_1503488390945862" id="_1503488391181959">
+        <jpa:inf e="true" n="java.lang.Comparable&lt;modelo.ConDetallesComprobanteContabilidad&gt;"/>
+        <jpa:inf e="true" n="java.io.Serializable"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="debe" ft="false" id="_1503488391185963"/>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="haber" ft="false" id="_1503488391185964"/>
+            <jpa:basic attribute-type="String" v="true" name="descripcion" ft="false" id="_1503488391185965"/>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaelaboracion" ft="false" id="_1503488391185966">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioModificador" ft="false" id="_1503488391185967">
+                <jpa:column name="USUARIO_MODIFICADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaModificacion" ft="false" id="_1503488391185968">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_MODIFICACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" name="fechaCreacion" ft="false" id="_1503488391185969">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="FECHA_CREACION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" name="usuarioCreador" ft="false" id="_1503488391185970">
+                <jpa:column name="USUARIO_CREADOR" unique="false" nullable="true" insertable="true" updatable="true" length="50"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="parcialdebe" ft="false" id="_1503488391185971"/>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="parcialhaber" ft="false" id="_1503488391185972"/>
+            <jpa:basic attribute-type="java.math.BigDecimal" v="true" name="saldo" ft="false" id="_1503488391185973"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488391135940" connected-attribute-id="_1503488391138950" v="true" name="conComprobanteContabilidad" ft="false" id="_1503488391185962">
+                <jpa:join-column name="COMPROBANTECONTABILIDAD_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488390965863" connected-attribute-id="_1503488390967880" v="true" name="conComprobanteIngreso" ft="false" id="_1503488391185974">
+                <jpa:join-column name="COMPROBANTEINGRESO_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488391089922" connected-attribute-id="_1503488391110938" v="true" name="conComprobanteEgreso" ft="false" id="_1503488391185975">
+                <jpa:join-column name="COMPROBANTEEGRESO_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488391019900" connected-attribute-id="_1503488391020910" v="true" name="conComprobanteVenta" ft="false" id="_1503488391185976">
+                <jpa:join-column name="COMPROBANTEVENTA_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1503488390995881" connected-attribute-id="_1503488390996895" v="true" name="conComprobanteGastos" ft="false" id="_1503488391186977">
+                <jpa:join-column name="conComprobanteGastos" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Long" v="true" name="id" ft="false" id="_1503488391184960">
+                <jpa:generated-value strategy="SEQUENCE" generator="SEQ_CONDETALLESCOMPROBANTECONTABILIDAD_ID"/>
+                <jpa:sequence-generator name="SEQ_CONDETALLESCOMPROBANTECONTABILIDAD_ID" sequence-name="SEQ_CONDETALLESCOMPROBANTECONTABILIDAD_ID" initial-value="1" allocation-size="1"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+        * This file was generated by the Jeddict
+        */</jpa:snp>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_1503488391663978">
+            <i ref="_1503488391089922" x="789" y="32"/>
+            <i ref="_1503488391135940" x="789" y="948"/>
+            <i ref="_1503488390965863" x="32" y="32"/>
+            <i ref="_1503488391019900" x="32" y="948"/>
+            <i ref="_1503488390995881" x="1154" y="486"/>
+            <i ref="_1503488391058913" x="1544" y="486"/>
+            <i ref="_1503488391181959" x="365" y="486"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

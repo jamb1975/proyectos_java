@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/05/2016, 02:10:35 PM
+    Author     : adminlinux
+*/
+
+.choice-box .label {
+    -fx-background-color: red;
+    -fx-text-fill: blue;
+    -fx-font-size: 8pt;
+}

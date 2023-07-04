@@ -1,0 +1,197 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+/*.background {
+    //-fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-border-color: aliceblue;//-fx-focus-color;
+    -fx-border-insets: -2.2, 0;
+    -fx-border-radius: 7.4, 2;
+    -fx-border-width: 4.4;
+}*/
+
+.top-segment {
+	-fx-background-color: rgba(255, 255, 255, 0.05);
+	-fx-border-color: 
+		transparent transparent rgb(255, 255, 255, 0.08) transparent,
+		transparent transparent rgb(0, 0, 0, 0.5) transparent;
+	-fx-border-width: 1, 1.5;
+	-fx-border-insets: -1, 0; 
+}
+
+.label {
+	-fx-font-family: "WP Hebrew David";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(255, 255, 255, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+    -fx-font-weight:bold;  
+}
+.message {
+	-fx-font-family: "Arial";
+    -fx-font-size: 14;
+     -fx-font-weight: bold;
+    -fx-text-fill: rgb(255, 255, 255, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+}
+
+.profileTitle {
+    -fx-font-size: 18;
+}
+
+.hyperlink {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(255, 255, 255, 0.4);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+    -fx-border-width: 0;
+}
+
+.hyperlink:focused {
+	-fx-text-fill: rgb(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+/*.text-field, .text-area {
+	-fx-font-size: 14;
+    -fx-background-color:
+    	rgb(255, 255, 255, 0.3),
+    	linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "WP Hebrew David";
+}*/
+    .text-field2{
+	-fx-font-size: 14;
+    -fx-background-color:
+    	rgb(255, 255, 0, 0.9);
+    
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "WP Hebrew David";
+}
+
+.text-area {
+	-fx-padding: 6 5 6 5;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-prompt-text-fill:
+        rgb(128,128,128);
+    -fx-background-color:
+    	rgb(235, 235, 235, 0.5),
+        rgb(0, 0, 0, 0.4),
+        rgb(255, 255, 255);
+}
+
+.button .text {
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.8), 0, 0.0 , 0 , -1 );
+}
+
+.button {
+    -fx-background-color:
+    	rgb(255, 255, 255, 0.08),
+    	rgb(0, 0, 0, 0.5),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#242a2e, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+   /* -fx-background-radius: 7, 6, 5, 4, 3, 5;
+    -fx-background-insets: -3 -3 -4 -3, -3, 0, 1, 2, 0;*/
+	-fx-font-family: "WP Hebrew David";
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-padding: 5 5 5 5;
+}
+
+.button:focused, .button:hover {
+    -fx-background-color:
+    	rgb(255, 255, 255, 0.08),
+    	rgb(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#3f4950, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+    -fx-border-color:darkkhaki;
+}
+.table-header {
+	-fx-font-family: "WP Hebrew David";
+    -fx-font-size: 12;
+    -fx-text-fill: rgb(0, 0, 0, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+}
+.table-view .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-family: "WP Hebrew David";
+    -fx-font-size: 12;
+    
+}
+.choice-box .label{
+    -fx-font-family: "WP Hebrew David";
+    -fx-font-size: 12;
+    -fx-text-fill: rgb(0, 0, 0, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+    -fx-font-weight:bold; 
+    -fx-size-height: 10px;   
+}
+
+.choice-box .context-menu{ 
+ -fx-background-color: transparent;   
+ 
+} 
+.choice-box{ 
+    -fx-font-size: 10;
+    -fx-background-color:
+    rgb(255, 255, 255, 0.3),
+    linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+    rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 0 0 4.5 0;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "WP Hebrew David"; 
+     -fx-size-height: 30px;
+} 
+.choice-box .menu-item {
+ -fx-background-color: #ffa700;   
+ -fx-border-color: #090a0c;
+ -fx-border-insets: -1.5, 0;
+ -fx-border-radius: 3.4, 2;
+ -fx-border-width: 0.7;
+ -fx-size-height: 10px;
+}
+.choice-box .menu-item:focused {
+-fx-background: #106ece;
+-fx-background-color:  #106ece;
+
+}
+
+.choice-box .menu-item:focused .label {
+-fx-text-fill: white;
+
+
+}
+.text-fieldValidateEmpty{
+	-fx-font-size: 14;
+    -fx-background-color:#ff1600,
+    	
+    	linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "WP Hebrew David";
+}
